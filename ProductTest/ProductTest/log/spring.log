@@ -1,0 +1,347 @@
+2021-04-10 10:33:14.191  INFO 13916 --- [restartedMain] com.cognizant.ProductTestApplication     : Starting ProductTestApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 13916 (D:\cts\CTE20IJ21\stage4\Rest\ProductTest\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 10:33:14.228 DEBUG 13916 --- [restartedMain] com.cognizant.ProductTestApplication     : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 10:33:14.233  INFO 13916 --- [restartedMain] com.cognizant.ProductTestApplication     : No active profile set, falling back to default profiles: default
+2021-04-10 10:33:14.375  INFO 13916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-10 10:33:14.376  INFO 13916 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-10 10:33:16.958  INFO 13916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 10:33:17.312  INFO 13916 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 255 ms. Found 1 JPA repository interfaces.
+2021-04-10 10:33:20.191  INFO 13916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-10 10:33:20.213  INFO 13916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-10 10:33:20.214  INFO 13916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-10 10:33:20.542  INFO 13916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-10 10:33:20.543  INFO 13916 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6166 ms
+2021-04-10 10:33:21.646  INFO 13916 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 10:33:21.860  INFO 13916 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 10:33:22.369  INFO 13916 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 10:33:22.687  INFO 13916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 10:33:22.695  WARN 13916 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 10:33:27.058  INFO 13916 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 10:33:27.786  INFO 13916 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 10:33:40.297 DEBUG 13916 --- [restartedMain] org.hibernate.SQL                        : create table Product (id integer not null, ctegory varchar(255), name varchar(255), price double precision not null, primary key (id)) engine=InnoDB
+2021-04-10 10:33:47.353  INFO 13916 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 10:33:48.006  INFO 13916 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:33:48.173  INFO 13916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-10 10:33:53.985  WARN 13916 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 10:33:54.623  INFO 13916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:33:56.396  INFO 13916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-10 10:33:56.423  INFO 13916 --- [restartedMain] com.cognizant.ProductTestApplication     : Started ProductTestApplication in 43.577 seconds (JVM running for 44.833)
+2021-04-10 10:38:13.083  INFO 13916 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-10 10:38:13.084  INFO 13916 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-10 10:38:13.087  INFO 13916 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-04-10 10:38:13.228  INFO 13916 --- [http-nio-9090-exec-2] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:38:14.557 DEBUG 13916 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:38:14.802 DEBUG 13916 --- [http-nio-9090-exec-2] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:38:14.805 DEBUG 13916 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:48:28.300  INFO 17488 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 17488 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 10:48:28.306 DEBUG 17488 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 10:48:28.315  INFO 17488 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 10:48:31.088  INFO 17488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 10:48:31.343  INFO 17488 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 204 ms. Found 1 JPA repository interfaces.
+2021-04-10 10:48:33.166  INFO 17488 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 10:48:33.336  INFO 17488 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 10:48:33.846  INFO 17488 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 10:48:34.909  INFO 17488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 10:48:34.915  WARN 17488 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 10:48:36.644  INFO 17488 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 10:48:36.678  INFO 17488 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 10:48:38.902  INFO 17488 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 10:48:38.924  INFO 17488 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:48:41.566  WARN 17488 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 10:48:43.093  INFO 17488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:48:45.356  INFO 17488 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 10:48:45.364  INFO 17488 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 10:48:45.378  INFO 17488 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 11 ms
+2021-04-10 10:48:45.463  INFO 17488 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 18.644 seconds (JVM running for 21.53)
+2021-04-10 10:48:46.381  INFO 17488 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:48:47.063 DEBUG 17488 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:48:47.123 DEBUG 17488 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:48:47.127 DEBUG 17488 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:48:47.656  INFO 17488 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:48:47.669  INFO 17488 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:48:47.686  INFO 17488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 10:48:47.744  INFO 17488 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-10 10:52:02.989  INFO 17324 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 17324 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 10:52:02.993 DEBUG 17324 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 10:52:03.003  INFO 17324 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 10:52:05.192  INFO 17324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 10:52:05.439  INFO 17324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213 ms. Found 1 JPA repository interfaces.
+2021-04-10 10:52:07.270  INFO 17324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 10:52:07.434  INFO 17324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 10:52:07.873  INFO 17324 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 10:52:08.922  INFO 17324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 10:52:08.926  WARN 17324 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 10:52:10.484  INFO 17324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 10:52:10.519  INFO 17324 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 10:52:12.850  INFO 17324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 10:52:12.868  INFO 17324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:52:15.591  WARN 17324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 10:52:16.968  INFO 17324 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:52:19.136  INFO 17324 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 10:52:19.137  INFO 17324 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 10:52:19.141  INFO 17324 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-04-10 10:52:19.201  INFO 17324 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 17.346 seconds (JVM running for 20.256)
+2021-04-10 10:52:20.485  INFO 17324 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:52:20.978 DEBUG 17324 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:52:21.033 DEBUG 17324 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:52:21.036 DEBUG 17324 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:52:21.438  INFO 17324 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:52:21.442 DEBUG 17324 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:52:21.451 DEBUG 17324 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:52:21.453 DEBUG 17324 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:52:21.759  INFO 17324 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:52:21.763  INFO 17324 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:52:21.776  INFO 17324 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 10:52:21.840  INFO 17324 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-10 10:57:53.822  INFO 10744 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 10744 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 10:57:53.828 DEBUG 10744 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 10:57:53.833  INFO 10744 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 10:57:56.443  INFO 10744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 10:57:56.655  INFO 10744 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174 ms. Found 1 JPA repository interfaces.
+2021-04-10 10:57:58.481  INFO 10744 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 10:57:58.633  INFO 10744 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 10:57:59.139  INFO 10744 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 10:58:00.268  INFO 10744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 10:58:00.272  WARN 10744 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 10:58:01.767  INFO 10744 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 10:58:01.810  INFO 10744 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 10:58:03.899  INFO 10744 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 10:58:03.923  INFO 10744 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:58:06.496  WARN 10744 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 10:58:07.718  INFO 10744 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:58:10.117  INFO 10744 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 10:58:10.118  INFO 10744 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 10:58:10.122  INFO 10744 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-04-10 10:58:10.216  INFO 10744 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 17.572 seconds (JVM running for 20.482)
+2021-04-10 10:58:11.525  INFO 10744 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:58:12.248 DEBUG 10744 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:58:12.323 DEBUG 10744 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:58:12.331 DEBUG 10744 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:58:12.667  INFO 10744 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:58:12.672 DEBUG 10744 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:58:12.678 DEBUG 10744 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:58:12.680 DEBUG 10744 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:58:12.935  INFO 10744 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:58:12.938  INFO 10744 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:58:12.945  INFO 10744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 10:58:12.980  INFO 10744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-10 10:58:41.328  INFO 1424 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 1424 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 10:58:41.331 DEBUG 1424 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 10:58:41.353  INFO 1424 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 10:58:44.426  INFO 1424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 10:58:44.690  INFO 1424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 1 JPA repository interfaces.
+2021-04-10 10:58:46.835  INFO 1424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 10:58:47.166  INFO 1424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 10:58:47.678  INFO 1424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 10:58:48.902  INFO 1424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 10:58:48.915  WARN 1424 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 10:58:50.662  INFO 1424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 10:58:50.719  INFO 1424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 10:58:53.057  INFO 1424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 10:58:53.078  INFO 1424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:59:07.323  INFO 8172 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 8172 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 10:59:07.351 DEBUG 8172 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 10:59:07.386  INFO 8172 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 10:59:10.314  INFO 8172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 10:59:10.552  INFO 8172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 185 ms. Found 1 JPA repository interfaces.
+2021-04-10 10:59:12.668  INFO 8172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 10:59:12.896  INFO 8172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 10:59:13.357  INFO 8172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 10:59:14.779  INFO 8172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 10:59:14.785  WARN 8172 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 10:59:16.568  INFO 8172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 10:59:16.619  INFO 8172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 10:59:18.971  INFO 8172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 10:59:18.988  INFO 8172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:59:21.716  WARN 8172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 10:59:22.757  INFO 8172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:59:24.979  INFO 8172 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 10:59:24.980  INFO 8172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 10:59:24.989  INFO 8172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2021-04-10 10:59:25.183  INFO 8172 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 19.093 seconds (JVM running for 21.829)
+2021-04-10 10:59:26.402  INFO 8172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:59:26.563 DEBUG 8172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 10:59:27.197  INFO 8172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:59:27.200 DEBUG 8172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 10:59:27.246 DEBUG 8172 --- [main] c.cognizant.service.ProductServiceImpl   : Product is : {}Product(id=10, name=mi, ctegory=mobile, price=150000.0)
+2021-04-10 10:59:27.382  INFO 8172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:59:27.918 DEBUG 8172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:59:27.936 DEBUG 8172 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:59:27.939 DEBUG 8172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:59:27.986  INFO 8172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 10:59:27.989 DEBUG 8172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:59:27.999 DEBUG 8172 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 10:59:28.002 DEBUG 8172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 10:59:28.189  INFO 8172 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 10:59:28.195  INFO 8172 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 10:59:28.199  INFO 8172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 10:59:28.254  INFO 8172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-10 11:01:44.604  INFO 7172 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7172 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 11:01:44.609 DEBUG 7172 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 11:01:44.615  INFO 7172 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 11:01:46.699  INFO 7172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 11:01:46.938  INFO 7172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 208 ms. Found 1 JPA repository interfaces.
+2021-04-10 11:01:48.656  INFO 7172 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 11:01:48.776  INFO 7172 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 11:01:49.141  INFO 7172 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 11:01:50.224  INFO 7172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 11:01:50.228  WARN 7172 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 11:01:51.877  INFO 7172 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 11:01:51.918  INFO 7172 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 11:01:53.979  INFO 7172 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 11:01:53.996  INFO 7172 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:01:56.350  WARN 7172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 11:01:57.699  INFO 7172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:01:59.945  INFO 7172 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 11:01:59.948  INFO 7172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 11:01:59.953  INFO 7172 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-04-10 11:02:00.093  INFO 7172 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 16.59 seconds (JVM running for 19.438)
+2021-04-10 11:02:00.977  INFO 7172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:02:01.472 DEBUG 7172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:02:01.652  INFO 7172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:02:01.659 DEBUG 7172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:02:01.719 DEBUG 7172 --- [main] c.cognizant.service.ProductServiceImpl   : Product is : {}Product(id=10, name=mi, ctegory=mobile, price=150000.0)
+2021-04-10 11:02:02.103  INFO 7172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:02:02.438 DEBUG 7172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:02:02.455 DEBUG 7172 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 11:02:02.458 DEBUG 7172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:02:02.512  INFO 7172 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:02:02.517 DEBUG 7172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:02:02.525 DEBUG 7172 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 11:02:02.529 DEBUG 7172 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:02:02.685  INFO 7172 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:02:02.689  INFO 7172 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:02:02.693  INFO 7172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 11:02:02.729  INFO 7172 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-10 11:07:45.889  INFO 7264 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7264 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 11:07:45.894 DEBUG 7264 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 11:07:45.918  INFO 7264 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 11:07:48.247  INFO 7264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 11:07:48.449  INFO 7264 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 169 ms. Found 1 JPA repository interfaces.
+2021-04-10 11:07:50.255  INFO 7264 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 11:07:50.420  INFO 7264 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 11:07:50.815  INFO 7264 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 11:07:51.897  INFO 7264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 11:07:51.903  WARN 7264 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 11:07:53.477  INFO 7264 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 11:07:53.516  INFO 7264 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 11:07:55.783  INFO 7264 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 11:07:55.802  INFO 7264 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:07:58.246  WARN 7264 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 11:07:59.493  INFO 7264 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:08:01.638  INFO 7264 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 11:08:01.639  INFO 7264 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 11:08:01.644  INFO 7264 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2021-04-10 11:08:01.705  INFO 7264 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 16.869 seconds (JVM running for 20.121)
+2021-04-10 11:08:03.043  INFO 7264 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:08:03.139 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:08:03.331  INFO 7264 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:08:03.337 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:08:03.426 DEBUG 7264 --- [main] c.cognizant.service.ProductServiceImpl   : Product is : {}Product(id=10, name=mi, ctegory=mobile, price=150000.0)
+2021-04-10 11:08:03.893  INFO 7264 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:08:04.536 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:08:04.564 DEBUG 7264 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 11:08:04.567 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:08:04.638  INFO 7264 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:08:04.646 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:08:04.671 DEBUG 7264 --- [main] c.cognizant.service.ProductServiceImpl   : Not present:{}1110
+2021-04-10 11:08:04.722  INFO 7264 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:08:04.726 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:08:04.734 DEBUG 7264 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 11:08:04.737 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:08:04.979  INFO 7264 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:08:04.987 DEBUG 7264 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:08:05.165 DEBUG 7264 --- [main] org.hibernate.SQL                        : delete from Product where id=?
+2021-04-10 11:08:05.338 DEBUG 7264 --- [main] c.cognizant.service.ProductServiceImpl   : deleted successfully :{}40
+2021-04-10 11:08:05.389  INFO 7264 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:08:05.395  INFO 7264 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:08:05.401  INFO 7264 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 11:08:05.432  INFO 7264 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-10 11:08:53.584  INFO 14804 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 14804 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 11:08:53.588 DEBUG 14804 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 11:08:53.594  INFO 14804 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 11:08:56.213  INFO 14804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 11:08:56.446  INFO 14804 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 203 ms. Found 1 JPA repository interfaces.
+2021-04-10 11:08:58.237  INFO 14804 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 11:08:58.407  INFO 14804 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 11:08:58.841  INFO 14804 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 11:08:59.962  INFO 14804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 11:08:59.967  WARN 14804 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 11:09:01.652  INFO 14804 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 11:09:01.689  INFO 14804 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 11:09:04.009  INFO 14804 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 11:09:04.033  INFO 14804 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:09:06.656  WARN 14804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 11:09:07.913  INFO 14804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:09:10.468  INFO 14804 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 11:09:10.469  INFO 14804 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 11:09:10.486  INFO 14804 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2021-04-10 11:09:10.575  INFO 14804 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 18.073 seconds (JVM running for 21.239)
+2021-04-10 11:09:11.612  INFO 14804 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:09:11.748 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:09:11.933  INFO 14804 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:09:11.939 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:09:11.994 DEBUG 14804 --- [main] c.cognizant.service.ProductServiceImpl   : Product is : {}Product(id=10, name=mi, ctegory=mobile, price=150000.0)
+2021-04-10 11:09:12.278  INFO 14804 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:09:12.671 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:09:12.688 DEBUG 14804 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 11:09:12.692 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:09:12.749  INFO 14804 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:09:12.755 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:09:12.763 DEBUG 14804 --- [main] c.cognizant.service.ProductServiceImpl   : Not present:{}1110
+2021-04-10 11:09:12.781  INFO 14804 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:09:12.785 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:09:12.794 DEBUG 14804 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=40, name=mi, ctegory=tv, price=15000.0)]
+2021-04-10 11:09:12.798 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:09:12.957  INFO 14804 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:09:12.961 DEBUG 14804 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:09:13.019 DEBUG 14804 --- [main] org.hibernate.SQL                        : delete from Product where id=?
+2021-04-10 11:09:13.240 DEBUG 14804 --- [main] c.cognizant.service.ProductServiceImpl   : deleted successfully :{}40
+2021-04-10 11:09:13.269  INFO 14804 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:09:13.273  INFO 14804 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:09:13.284  INFO 14804 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 11:09:13.337  INFO 14804 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-10 11:17:12.433  INFO 12860 --- [main] c.cognizant.ProductTestApplicationTests  : Starting ProductTestApplicationTests using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 12860 (started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\ProductTest)
+2021-04-10 11:17:12.435 DEBUG 12860 --- [main] c.cognizant.ProductTestApplicationTests  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-10 11:17:12.438  INFO 12860 --- [main] c.cognizant.ProductTestApplicationTests  : No active profile set, falling back to default profiles: default
+2021-04-10 11:17:15.053  INFO 12860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-10 11:17:15.336  INFO 12860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 232 ms. Found 1 JPA repository interfaces.
+2021-04-10 11:17:17.243  INFO 12860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-10 11:17:17.430  INFO 12860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-10 11:17:17.918  INFO 12860 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-10 11:17:19.066  INFO 12860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-10 11:17:19.072  WARN 12860 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-10 11:17:20.795  INFO 12860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-10 11:17:20.834  INFO 12860 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-10 11:17:23.094  INFO 12860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-10 11:17:23.112  INFO 12860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:17:25.685  WARN 12860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-10 11:17:27.043  INFO 12860 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:17:29.625  INFO 12860 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-04-10 11:17:29.627  INFO 12860 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-04-10 11:17:29.633  INFO 12860 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 6 ms
+2021-04-10 11:17:29.702  INFO 12860 --- [main] c.cognizant.ProductTestApplicationTests  : Started ProductTestApplicationTests in 18.398 seconds (JVM running for 25.528)
+2021-04-10 11:17:30.878  INFO 12860 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:17:31.126 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:17:31.269  INFO 12860 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:17:31.273 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:17:31.303 DEBUG 12860 --- [main] c.cognizant.service.ProductServiceImpl   : Product is : {}Product(id=10, name=mi, ctegory=mobile, price=150000.0)
+2021-04-10 11:17:31.698  INFO 12860 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:17:32.209 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:17:32.233 DEBUG 12860 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0)]
+2021-04-10 11:17:32.237 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:17:32.568  INFO 12860 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:17:32.575 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:17:32.639 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:17:32.707 DEBUG 12860 --- [main] org.hibernate.SQL                        : insert into Product (ctegory, name, price, id) values (?, ?, ?, ?)
+2021-04-10 11:17:32.871 DEBUG 12860 --- [main] c.cognizant.service.ProductServiceImpl   : successfully saved :{}Product(id=45, name=tab, ctegory=LG, price=10000.0)
+2021-04-10 11:17:32.894  INFO 12860 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:17:32.898 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_0_, product0_.ctegory as ctegory2_0_0_, product0_.name as name3_0_0_, product0_.price as price4_0_0_ from Product product0_ where product0_.id=?
+2021-04-10 11:17:32.906 DEBUG 12860 --- [main] c.cognizant.service.ProductServiceImpl   : Not present:{}1110
+2021-04-10 11:17:32.927  INFO 12860 --- [main] c.cognizant.service.ProductServiceImpl   : started
+2021-04-10 11:17:32.931 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:17:32.938 DEBUG 12860 --- [main] c.cognizant.service.ProductServiceImpl   : Products are : {}[Product(id=10, name=mi, ctegory=mobile, price=150000.0), Product(id=11, name=lg, ctegory=mobile, price=180000.0), Product(id=20, name=lg, ctegory=tv, price=20000.0), Product(id=30, name=sony, ctegory=tv, price=30000.0), Product(id=45, name=tab, ctegory=LG, price=10000.0)]
+2021-04-10 11:17:32.943 DEBUG 12860 --- [main] org.hibernate.SQL                        : select product0_.id as id1_0_, product0_.ctegory as ctegory2_0_, product0_.name as name3_0_, product0_.price as price4_0_ from Product product0_
+2021-04-10 11:17:33.262  INFO 12860 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-10 11:17:33.265  INFO 12860 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-10 11:17:33.274  INFO 12860 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-10 11:17:33.309  INFO 12860 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
