@@ -1,0 +1,720 @@
+2021-04-09 12:12:47.415  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:12:47.421 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:12:47.423  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:12:47.815  INFO 7600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-09 12:12:47.833  INFO 7600 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-09 12:12:53.478  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:12:53.982  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 385 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:13:07.933  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:13:08.050  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:13:08.064  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:13:09.163  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:13:09.166  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 21332 ms
+2021-04-09 12:13:12.397  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:13:13.038  INFO 7600 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-09 12:13:13.523  INFO 7600 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-09 12:13:14.346  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-09 12:13:14.363  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:13:17.406  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-09 12:13:17.456  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:13:21.362 DEBUG 7600 --- [restartedMain] org.hibernate.SQL                        : create table Employee (id integer not null, age integer, doj date, gender varchar(255), name varchar(255), salary double precision, primary key (id)) engine=InnoDB
+2021-04-09 12:13:23.632  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:13:23.656  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:13:23.696  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:13:26.380  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:13:27.162  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:13:28.480  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:13:28.529  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 42.19 seconds (JVM running for 44.374)
+2021-04-09 12:16:05.690  INFO 7600 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:16:05.691  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:16:05.695  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-04-09 12:16:20.755  WARN 7600 --- [http-nio-9090-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.cognizant.controller.EmployeeController.addEmployee(com.cognizant.model.Employee) throws com.cognizant.exception.EmployeeException: [Field error in object 'employee' on field 'name': rejected value [priya]; codes [Pattern.employee.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@316d3a8e,[A-Z]{1}[A-Za-z\s] {3,}]; default message [Name should start with Capital letter followed by only chars]] ]
+2021-04-09 12:16:48.978  WARN 7600 --- [http-nio-9090-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.cognizant.controller.EmployeeController.addEmployee(com.cognizant.model.Employee) throws com.cognizant.exception.EmployeeException: [Field error in object 'employee' on field 'name': rejected value [Priya]; codes [Pattern.employee.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@316d3a8e,[A-Z]{1}[A-Za-z\s] {3,}]; default message [Name should start with Capital letter followed by only chars]] ]
+2021-04-09 12:17:01.073  WARN 7600 --- [http-nio-9090-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.cognizant.controller.EmployeeController.addEmployee(com.cognizant.model.Employee) throws com.cognizant.exception.EmployeeException: [Field error in object 'employee' on field 'name': rejected value [Priya v]; codes [Pattern.employee.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@316d3a8e,[A-Z]{1}[A-Za-z\s] {3,}]; default message [Name should start with Capital letter followed by only chars]] ]
+2021-04-09 12:17:09.766  WARN 7600 --- [http-nio-9090-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.cognizant.controller.EmployeeController.addEmployee(com.cognizant.model.Employee) throws com.cognizant.exception.EmployeeException: [Field error in object 'employee' on field 'name': rejected value [Priya V]; codes [Pattern.employee.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@316d3a8e,[A-Z]{1}[A-Za-z\s] {3,}]; default message [Name should start with Capital letter followed by only chars]] ]
+2021-04-09 12:17:26.149  WARN 7600 --- [http-nio-9090-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.cognizant.controller.EmployeeController.addEmployee(com.cognizant.model.Employee) throws com.cognizant.exception.EmployeeException: [Field error in object 'employee' on field 'name': rejected value [PriyA]; codes [Pattern.employee.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@316d3a8e,[A-Z]{1}[A-Za-z\s] {3,}]; default message [Name should start with Capital letter followed by only chars]] ]
+2021-04-09 12:17:46.699  WARN 7600 --- [http-nio-9090-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public java.lang.String com.cognizant.controller.EmployeeController.addEmployee(com.cognizant.model.Employee) throws com.cognizant.exception.EmployeeException: [Field error in object 'employee' on field 'name': rejected value [PriyA]; codes [Pattern.employee.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [employee.name,name]; arguments []; default message [name],[Ljavax.validation.constraints.Pattern$Flag;@316d3a8e,[A-Z]{1}[A-Za-z\s] {3,}]; default message [Name should start with Capital letter followed by only chars]] ]
+2021-04-09 12:18:04.615  INFO 7600 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:18:04.619  INFO 7600 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:18:04.632  INFO 7600 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-09 12:18:04.660  INFO 7600 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-09 12:18:05.106  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:18:05.106 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:18:05.107  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:18:05.765  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:18:05.935  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:18:06.905  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:18:06.920  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:18:06.921  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:18:07.093  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:18:07.099  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1977 ms
+2021-04-09 12:18:07.305  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:18:07.315  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-09 12:18:07.316  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:18:07.405  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-09 12:18:07.406  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:18:07.602  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:18:07.603  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:18:07.652  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:18:08.307  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:18:08.438  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:18:08.848  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:18:08.865  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 3.839 seconds (JVM running for 324.71)
+2021-04-09 12:18:08.873  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:18:13.096  INFO 7600 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:18:13.102  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:18:13.104  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-09 12:18:13.149  INFO 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : started
+2021-04-09 12:18:13.150 DEBUG 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : Employee added: {}Employee(id=1001, name=PriyA, gender=female, age=38, salary=8888.0, doj=2011-02-03)
+2021-04-09 12:18:13.150  INFO 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:18:13.221 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:18:13.304 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:18:13.365 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : insert into Employee (age, doj, gender, name, salary, id) values (?, ?, ?, ?, ?, ?)
+2021-04-09 12:18:13.708 DEBUG 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : successfully saved :{}Employee(id=1001, name=PriyA, gender=female, age=38, salary=8888.0, doj=2011-02-03)
+2021-04-09 12:18:42.927  INFO 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : started
+2021-04-09 12:18:42.928 DEBUG 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : Employee added: {}Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03)
+2021-04-09 12:18:42.929  INFO 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:18:42.936 DEBUG 7600 --- [http-nio-9090-exec-3] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:18:42.945 DEBUG 7600 --- [http-nio-9090-exec-3] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:18:42.949 DEBUG 7600 --- [http-nio-9090-exec-3] org.hibernate.SQL                        : insert into Employee (age, doj, gender, name, salary, id) values (?, ?, ?, ?, ?, ?)
+2021-04-09 12:18:43.233 DEBUG 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : successfully saved :{}Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03)
+2021-04-09 12:19:12.836  INFO 7600 --- [http-nio-9090-exec-4] c.c.controller.EmployeeController        : started
+2021-04-09 12:19:12.837 DEBUG 7600 --- [http-nio-9090-exec-4] c.c.controller.EmployeeController        : Employee added: {}Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)
+2021-04-09 12:19:12.838  INFO 7600 --- [http-nio-9090-exec-4] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:19:12.842 DEBUG 7600 --- [http-nio-9090-exec-4] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:19:12.851 DEBUG 7600 --- [http-nio-9090-exec-4] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:19:12.854 DEBUG 7600 --- [http-nio-9090-exec-4] org.hibernate.SQL                        : insert into Employee (age, doj, gender, name, salary, id) values (?, ?, ?, ?, ?, ?)
+2021-04-09 12:19:13.057 DEBUG 7600 --- [http-nio-9090-exec-4] c.cognizant.service.EmployeeServiceImpl  : successfully saved :{}Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)
+2021-04-09 12:20:56.717  INFO 7600 --- [http-nio-9090-exec-7] c.c.controller.EmployeeController        : started
+2021-04-09 12:20:56.718  INFO 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:20:57.860 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 12:20:57.904 DEBUG 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=PriyA, gender=female, age=38, salary=8888.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)]
+2021-04-09 12:20:57.909 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 12:20:57.915 DEBUG 7600 --- [http-nio-9090-exec-7] c.c.controller.EmployeeController        : Employess are : {}[Employee(id=1001, name=PriyA, gender=female, age=38, salary=8888.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)]
+2021-04-09 12:20:57.916  INFO 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:20:57.920 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 12:20:57.934 DEBUG 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=PriyA, gender=female, age=38, salary=8888.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)]
+2021-04-09 12:20:57.942 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 12:22:01.492  INFO 7600 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:22:01.496  INFO 7600 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:22:01.504  INFO 7600 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-09 12:22:01.522  INFO 7600 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-04-09 12:22:01.974  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:22:01.974 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:22:01.975  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:22:02.881  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:22:03.030  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:22:03.953  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:22:03.955  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:22:03.958  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:22:04.013  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:22:04.014  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2034 ms
+2021-04-09 12:22:04.205  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:22:04.248  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-09 12:22:04.252  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:22:04.354  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-04-09 12:22:04.355  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:22:04.455  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:22:04.456  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:22:04.470  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:22:04.991  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:22:05.125  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:22:05.359  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:22:05.374  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 3.47 seconds (JVM running for 561.218)
+2021-04-09 12:22:05.385  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:22:08.953  INFO 7600 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:22:08.957  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:22:08.961  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-04-09 12:22:08.974  INFO 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : started
+2021-04-09 12:22:08.980  INFO 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:22:08.994 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:22:09.006 DEBUG 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : Employee is : {}Employee(id=1001, name=PriyA, gender=female, age=38, salary=8888.0, doj=2011-02-03)
+2021-04-09 12:22:09.015 DEBUG 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : Employee is: {}Employee(id=1001, name=PriyA, gender=female, age=38, salary=8888.0, doj=2011-02-03)
+2021-04-09 12:22:56.618  INFO 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : started
+2021-04-09 12:22:56.619 DEBUG 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : Employee updated: {}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:22:56.621  INFO 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:22:56.624 DEBUG 7600 --- [http-nio-9090-exec-3] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:22:56.635 DEBUG 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : Already present:{}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:22:56.649 ERROR 7600 --- [http-nio-9090-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.cognizant.exception.EmployeeException: Employee with id 1001 alread exists] with root cause
+
+com.cognizant.exception.EmployeeException: Employee with id 1001 alread exists
+	at com.cognizant.service.EmployeeServiceImpl.updateEmployee(EmployeeServiceImpl.java:56) ~[classes/:na]
+	at com.cognizant.controller.EmployeeController.updateEmployee(EmployeeController.java:93) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_261]
+
+2021-04-09 12:24:44.097  INFO 7600 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:24:44.100  INFO 7600 --- [Thread-14] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:24:44.101  INFO 7600 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-04-09 12:24:44.115  INFO 7600 --- [Thread-14] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-04-09 12:24:44.486  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:24:44.488 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:24:44.490  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:24:45.275  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:24:45.312  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:24:45.760  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:24:45.762  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:24:45.767  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:24:45.850  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:24:45.850  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1346 ms
+2021-04-09 12:24:45.929  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:24:45.933  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-04-09 12:24:45.934  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:24:46.009  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-04-09 12:24:46.011  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:24:46.210  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:24:46.211  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:24:46.225  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:24:46.766  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:24:46.884  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:24:47.068  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:24:47.076  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 2.653 seconds (JVM running for 722.92)
+2021-04-09 12:24:47.082  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:25:51.947  INFO 7600 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:25:51.951  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:25:51.953  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-09 12:25:52.002  INFO 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : started
+2021-04-09 12:25:52.003 DEBUG 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : Employee updated: {}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:25:52.003  INFO 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:25:52.008 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:25:52.023 DEBUG 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : Already present:{}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:25:52.039 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : update Employee set age=?, doj=?, gender=?, name=?, salary=? where id=?
+2021-04-09 12:25:52.310 DEBUG 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : updated successfully  :{}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:27:09.993  INFO 7600 --- [http-nio-9090-exec-4] c.c.controller.EmployeeController        : started
+2021-04-09 12:27:09.993 DEBUG 7600 --- [http-nio-9090-exec-4] c.c.controller.EmployeeController        : Employee added: {}Employee(id=1004, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:27:09.993  INFO 7600 --- [http-nio-9090-exec-4] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:27:09.999 DEBUG 7600 --- [http-nio-9090-exec-4] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:27:10.008 DEBUG 7600 --- [http-nio-9090-exec-4] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:27:10.011 DEBUG 7600 --- [http-nio-9090-exec-4] org.hibernate.SQL                        : insert into Employee (age, doj, gender, name, salary, id) values (?, ?, ?, ?, ?, ?)
+2021-04-09 12:27:10.308 DEBUG 7600 --- [http-nio-9090-exec-4] c.cognizant.service.EmployeeServiceImpl  : successfully saved :{}Employee(id=1004, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:27:26.097  INFO 7600 --- [http-nio-9090-exec-6] c.c.controller.EmployeeController        : started
+2021-04-09 12:27:26.098 DEBUG 7600 --- [http-nio-9090-exec-6] c.c.controller.EmployeeController        : Employee is deleted: {}1004
+2021-04-09 12:27:26.098  INFO 7600 --- [http-nio-9090-exec-6] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:27:26.102 DEBUG 7600 --- [http-nio-9090-exec-6] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:27:26.149 DEBUG 7600 --- [http-nio-9090-exec-6] org.hibernate.SQL                        : delete from Employee where id=?
+2021-04-09 12:27:26.413 DEBUG 7600 --- [http-nio-9090-exec-6] c.cognizant.service.EmployeeServiceImpl  : deleted successfully :{}1004
+2021-04-09 12:27:32.519  INFO 7600 --- [http-nio-9090-exec-7] c.c.controller.EmployeeController        : started
+2021-04-09 12:27:32.521 DEBUG 7600 --- [http-nio-9090-exec-7] c.c.controller.EmployeeController        : Employee is deleted: {}1004
+2021-04-09 12:27:32.521  INFO 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:27:32.523 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:27:32.535 DEBUG 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : Not present:{}1004
+2021-04-09 12:27:32.536 ERROR 7600 --- [http-nio-9090-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.cognizant.exception.EmployeeException: Employee with id 1004 not exists] with root cause
+
+com.cognizant.exception.EmployeeException: Employee with id 1004 not exists
+	at com.cognizant.service.EmployeeServiceImpl.deleteEmployeeById(EmployeeServiceImpl.java:77) ~[classes/:na]
+	at com.cognizant.controller.EmployeeController.deleteEmployeeById(EmployeeController.java:101) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_261]
+
+2021-04-09 12:28:17.586  INFO 7600 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:28:17.590  INFO 7600 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:28:17.599  INFO 7600 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-04-09 12:28:17.616  INFO 7600 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-04-09 12:28:18.023  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:28:18.025 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:28:18.025  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:28:18.673  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:28:18.705  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:28:19.168  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:28:19.170  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:28:19.171  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:28:19.230  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:28:19.230  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1200 ms
+2021-04-09 12:28:19.474  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:28:19.506  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-04-09 12:28:19.524  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:28:19.611  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-04-09 12:28:19.611  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:28:19.744  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:28:19.745  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:28:19.755  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:28:20.385  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:28:20.442  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:28:20.669  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:28:20.680  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 2.712 seconds (JVM running for 936.524)
+2021-04-09 12:28:20.685  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:28:41.068  INFO 7600 --- [http-nio-9090-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:28:41.071  INFO 7600 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:28:41.073  INFO 7600 --- [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-09 12:28:41.090  INFO 7600 --- [http-nio-9090-exec-9] c.c.controller.EmployeeController        : started
+2021-04-09 12:28:41.091  INFO 7600 --- [http-nio-9090-exec-9] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:28:41.154 DEBUG 7600 --- [http-nio-9090-exec-9] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:28:41.184 DEBUG 7600 --- [http-nio-9090-exec-9] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[]
+2021-04-09 12:28:41.185 DEBUG 7600 --- [http-nio-9090-exec-9] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:28:41.190 DEBUG 7600 --- [http-nio-9090-exec-9] c.c.controller.EmployeeController        : Employess are : {}[]
+2021-04-09 12:28:41.190  INFO 7600 --- [http-nio-9090-exec-9] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:28:41.192 DEBUG 7600 --- [http-nio-9090-exec-9] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:28:41.196 DEBUG 7600 --- [http-nio-9090-exec-9] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[]
+2021-04-09 12:28:41.202 DEBUG 7600 --- [http-nio-9090-exec-9] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:28:46.496  INFO 7600 --- [http-nio-9090-exec-8] c.c.controller.EmployeeController        : started
+2021-04-09 12:28:46.497  INFO 7600 --- [http-nio-9090-exec-8] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:28:46.501 DEBUG 7600 --- [http-nio-9090-exec-8] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:28:46.506 DEBUG 7600 --- [http-nio-9090-exec-8] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)]
+2021-04-09 12:28:46.507 DEBUG 7600 --- [http-nio-9090-exec-8] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:28:46.509 DEBUG 7600 --- [http-nio-9090-exec-8] c.c.controller.EmployeeController        : Employess are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)]
+2021-04-09 12:28:46.510  INFO 7600 --- [http-nio-9090-exec-8] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:28:46.511 DEBUG 7600 --- [http-nio-9090-exec-8] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:28:46.515 DEBUG 7600 --- [http-nio-9090-exec-8] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03)]
+2021-04-09 12:28:46.516 DEBUG 7600 --- [http-nio-9090-exec-8] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:29:05.073  INFO 7600 --- [http-nio-9090-exec-10] c.c.controller.EmployeeController        : started
+2021-04-09 12:29:05.074  INFO 7600 --- [http-nio-9090-exec-10] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:29:05.075 DEBUG 7600 --- [http-nio-9090-exec-10] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:29:05.081 DEBUG 7600 --- [http-nio-9090-exec-10] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03)]
+2021-04-09 12:29:05.083 DEBUG 7600 --- [http-nio-9090-exec-10] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:29:05.085 DEBUG 7600 --- [http-nio-9090-exec-10] c.c.controller.EmployeeController        : Employess are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03)]
+2021-04-09 12:29:05.086  INFO 7600 --- [http-nio-9090-exec-10] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:29:05.089 DEBUG 7600 --- [http-nio-9090-exec-10] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:29:05.093 DEBUG 7600 --- [http-nio-9090-exec-10] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03)]
+2021-04-09 12:29:05.094 DEBUG 7600 --- [http-nio-9090-exec-10] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_ where employee0_.salary between ? and ?
+2021-04-09 12:29:39.280  INFO 7600 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:29:39.281  INFO 7600 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:29:39.284  INFO 7600 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2021-04-09 12:29:39.301  INFO 7600 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2021-04-09 12:29:39.824  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:29:39.825 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:29:39.825  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:29:40.472  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:29:40.509  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:29:40.978  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:29:40.979  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:29:40.979  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:29:41.022  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:29:41.022  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2021-04-09 12:29:41.091  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:29:41.096  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2021-04-09 12:29:41.096  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:29:41.135  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2021-04-09 12:29:41.136  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:29:41.261  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:29:41.262  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:29:41.273  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:29:41.808  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:29:41.875  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:29:42.021  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:29:42.024  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 2.262 seconds (JVM running for 1017.87)
+2021-04-09 12:29:42.027  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:31:08.857  INFO 7600 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:31:08.859  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:31:08.861  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-09 12:31:08.892  INFO 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : started
+2021-04-09 12:31:08.895 DEBUG 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : Employee added: {}Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)
+2021-04-09 12:31:08.895  INFO 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:31:08.908 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:31:08.925 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:31:08.934 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : insert into Employee (age, doj, gender, name, salary, id) values (?, ?, ?, ?, ?, ?)
+2021-04-09 12:31:09.174 DEBUG 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : successfully saved :{}Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)
+2021-04-09 12:31:36.212  INFO 7600 --- [Thread-29] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:31:36.213  INFO 7600 --- [Thread-29] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:31:36.214  INFO 7600 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2021-04-09 12:31:36.234  INFO 7600 --- [Thread-29] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2021-04-09 12:31:36.832  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:31:36.833 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:31:36.833  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:31:37.411  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:31:37.446  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:31:37.961  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:31:37.962  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:31:37.963  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:31:38.014  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:31:38.014  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1175 ms
+2021-04-09 12:31:38.099  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:31:38.109  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2021-04-09 12:31:38.110  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:31:38.144  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2021-04-09 12:31:38.145  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:31:38.248  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:31:38.249  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:31:38.259  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:31:38.726  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:31:38.780  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:31:39.138  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:31:39.142  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 2.367 seconds (JVM running for 1134.988)
+2021-04-09 12:31:39.145  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:34:39.483  INFO 7600 --- [Thread-34] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:34:39.484  INFO 7600 --- [Thread-34] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:34:39.485  INFO 7600 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2021-04-09 12:34:39.511  INFO 7600 --- [Thread-34] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2021-04-09 12:34:39.850  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:34:39.851 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:34:39.852  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:34:40.394  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:34:40.416  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:34:40.776  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:34:40.779  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:34:40.780  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:34:40.821  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:34:40.821  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 962 ms
+2021-04-09 12:34:40.917  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:34:40.928  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2021-04-09 12:34:40.930  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:34:40.982  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2021-04-09 12:34:40.983  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:34:41.113  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:34:41.114  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:34:41.140  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:34:41.472  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:34:41.550  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:34:41.800  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:34:41.809  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 2.025 seconds (JVM running for 1317.651)
+2021-04-09 12:34:41.814  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:36:10.406  INFO 7600 --- [Thread-39] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:36:10.407  INFO 7600 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:36:10.409  INFO 7600 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2021-04-09 12:36:10.433  INFO 7600 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2021-04-09 12:36:10.742  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:36:10.744 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:36:10.745  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:36:11.082  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:36:11.114  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:36:11.349  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:36:11.350  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:36:11.351  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:36:11.407  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:36:11.407  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 659 ms
+2021-04-09 12:36:11.490  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:36:11.500  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2021-04-09 12:36:11.500  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:36:11.522  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2021-04-09 12:36:11.522  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:36:11.599  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:36:11.600  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:36:11.606  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:36:11.785  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:36:11.842  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:36:11.923  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:36:11.928  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 1.224 seconds (JVM running for 1407.773)
+2021-04-09 12:36:11.929  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:36:32.017  INFO 7600 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:36:32.020  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:36:32.022  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-09 12:36:32.025  INFO 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : started
+2021-04-09 12:36:32.025  INFO 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:36:32.035 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:36:32.041 DEBUG 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : Employee is : {}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:36:32.049 DEBUG 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : Employee is: {}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 12:36:37.274  INFO 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : started
+2021-04-09 12:36:37.275  INFO 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:36:37.284 DEBUG 7600 --- [http-nio-9090-exec-3] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:36:37.290 ERROR 7600 --- [http-nio-9090-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.util.NoSuchElementException: No value present] with root cause
+
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Unknown Source) ~[na:1.8.0_261]
+	at com.cognizant.service.EmployeeServiceImpl.getEmployeeById(EmployeeServiceImpl.java:31) ~[classes/:na]
+	at com.cognizant.controller.EmployeeController.getEmployeeById(EmployeeController.java:49) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_261]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_261]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_261]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_261]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.5.jar:5.3.5]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.44.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.5.jar:5.3.5]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_261]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_261]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.44.jar:9.0.44]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_261]
+
+2021-04-09 12:38:16.324  INFO 7600 --- [Thread-44] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:38:16.330  INFO 7600 --- [Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:38:16.337  INFO 7600 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2021-04-09 12:38:16.385  INFO 7600 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2021-04-09 12:38:16.677  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:38:16.678 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:38:16.678  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:38:16.929  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:38:16.941  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:38:17.176  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:38:17.176  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:38:17.177  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:38:17.231  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:38:17.232  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 549 ms
+2021-04-09 12:38:17.327  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:38:17.334  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2021-04-09 12:38:17.335  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:38:17.387  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2021-04-09 12:38:17.388  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:38:17.468  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:38:17.469  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:38:17.479  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:38:17.755  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:38:17.855  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:38:17.988  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:38:17.995  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 1.365 seconds (JVM running for 1533.839)
+2021-04-09 12:38:18.000  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:44:05.560  INFO 7600 --- [Thread-49] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:44:05.563  INFO 7600 --- [Thread-49] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:44:05.564  INFO 7600 --- [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2021-04-09 12:44:05.583  INFO 7600 --- [Thread-49] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2021-04-09 12:44:06.020  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:44:06.021 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:44:06.021  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:44:06.553  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:44:06.643  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:44:06.975  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:44:06.979  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:44:06.979  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:44:07.005  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:44:07.005  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 979 ms
+2021-04-09 12:44:07.082  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:44:07.092  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2021-04-09 12:44:07.093  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:44:07.245  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2021-04-09 12:44:07.246  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:44:07.483  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:44:07.484  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:44:07.504  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:44:07.833  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:44:07.902  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:44:08.083  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:44:08.093  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 2.133 seconds (JVM running for 1883.938)
+2021-04-09 12:44:08.095  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:44:33.477  INFO 7600 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:44:33.480  INFO 7600 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:44:33.481  INFO 7600 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2021-04-09 12:44:33.499  INFO 7600 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2021-04-09 12:44:34.054  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:44:34.055 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:44:34.055  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:44:34.482  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:44:34.499  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:44:34.845  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:44:34.851  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:44:34.852  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:44:34.885  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:44:34.886  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 823 ms
+2021-04-09 12:44:34.928  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:44:34.932  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2021-04-09 12:44:34.932  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:44:34.950  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2021-04-09 12:44:34.952  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:44:35.138  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:44:35.139  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:44:35.182  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:44:35.538  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:44:35.583  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:44:35.936  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:44:35.946  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 1.942 seconds (JVM running for 1911.791)
+2021-04-09 12:44:35.949  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:44:50.958  INFO 7600 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:44:50.962  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:44:50.965  INFO 7600 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-09 12:44:50.971  INFO 7600 --- [http-nio-9090-exec-2] c.c.controller.EmployeeController        : started
+2021-04-09 12:44:50.972  INFO 7600 --- [http-nio-9090-exec-2] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:44:50.984 DEBUG 7600 --- [http-nio-9090-exec-2] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:44:51.012  WARN 7600 --- [http-nio-9090-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.util.NoSuchElementException: No value present]
+2021-04-09 12:45:18.463  INFO 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : started
+2021-04-09 12:45:18.464 DEBUG 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : Employee is deleted: {}1008
+2021-04-09 12:45:18.465  INFO 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:45:18.469 DEBUG 7600 --- [http-nio-9090-exec-3] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 12:45:18.475 DEBUG 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : Not present:{}1008
+2021-04-09 12:45:18.483  WARN 7600 --- [http-nio-9090-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cognizant.exception.EmployeeException: Employee with id 1008 not exists]
+2021-04-09 12:48:50.704  INFO 7600 --- [Thread-59] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:48:50.706  INFO 7600 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:48:50.706  INFO 7600 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2021-04-09 12:48:50.729  INFO 7600 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2021-04-09 12:48:51.175  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Starting RestEmployeeDemoApplication using Java 1.8.0_261 on DESKTOP-FSK0MVI with PID 7600 (D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo\target\classes started by Shanmugapriya in D:\cts\CTE20IJ21\stage4\Rest\rest-employee-demo)
+2021-04-09 12:48:51.176 DEBUG 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-09 12:48:51.176  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : No active profile set, falling back to default profiles: default
+2021-04-09 12:48:51.422  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-09 12:48:51.434  INFO 7600 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2021-04-09 12:48:51.622  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2021-04-09 12:48:51.623  INFO 7600 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-09 12:48:51.623  INFO 7600 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-09 12:48:51.652  INFO 7600 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-09 12:48:51.652  INFO 7600 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 469 ms
+2021-04-09 12:48:51.721  INFO 7600 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-09 12:48:51.728  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2021-04-09 12:48:51.729  WARN 7600 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-04-09 12:48:51.760  INFO 7600 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2021-04-09 12:48:51.761  INFO 7600 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-04-09 12:48:51.853  INFO 7600 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-09 12:48:51.854  INFO 7600 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-09 12:48:51.859  INFO 7600 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-09 12:48:52.039  WARN 7600 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-09 12:48:52.152  INFO 7600 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-09 12:48:52.227  INFO 7600 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2021-04-09 12:48:52.233  INFO 7600 --- [restartedMain] c.cognizant.RestEmployeeDemoApplication  : Started RestEmployeeDemoApplication in 1.097 seconds (JVM running for 2168.078)
+2021-04-09 12:48:52.235  INFO 7600 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-09 12:58:01.518  INFO 7600 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-09 12:58:01.520  INFO 7600 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-09 12:58:01.522  INFO 7600 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-09 12:58:01.524  INFO 7600 --- [http-nio-9090-exec-1] c.c.controller.EmployeeController        : started
+2021-04-09 12:58:01.524  INFO 7600 --- [http-nio-9090-exec-1] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:58:01.534 DEBUG 7600 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 12:58:01.541 DEBUG 7600 --- [http-nio-9090-exec-1] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03), Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)]
+2021-04-09 12:58:01.544 DEBUG 7600 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 12:58:01.552 DEBUG 7600 --- [http-nio-9090-exec-1] c.c.controller.EmployeeController        : Employess are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03), Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)]
+2021-04-09 12:58:01.554  INFO 7600 --- [http-nio-9090-exec-1] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 12:58:01.556 DEBUG 7600 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 12:58:01.560 DEBUG 7600 --- [http-nio-9090-exec-1] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03), Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)]
+2021-04-09 12:58:01.562 DEBUG 7600 --- [http-nio-9090-exec-1] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 13:00:36.664  INFO 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : started
+2021-04-09 13:00:36.666  INFO 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 13:00:36.673 DEBUG 7600 --- [http-nio-9090-exec-3] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 13:00:36.679 DEBUG 7600 --- [http-nio-9090-exec-3] c.cognizant.service.EmployeeServiceImpl  : Employee is : {}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 13:00:36.683 DEBUG 7600 --- [http-nio-9090-exec-3] c.c.controller.EmployeeController        : Employee is: {}Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 13:05:02.912  WARN 7600 --- [http-nio-9090-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2021-04-09 13:06:26.141  WARN 7600 --- [http-nio-9090-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2021-04-09 13:07:17.485  INFO 7600 --- [http-nio-9090-exec-9] c.c.controller.EmployeeController        : started
+2021-04-09 13:07:17.486 DEBUG 7600 --- [http-nio-9090-exec-9] c.c.controller.EmployeeController        : Employee added: {}Employee(id=2001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 13:07:17.486  INFO 7600 --- [http-nio-9090-exec-9] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 13:07:17.491 DEBUG 7600 --- [http-nio-9090-exec-9] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 13:07:17.512 DEBUG 7600 --- [http-nio-9090-exec-9] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 13:07:17.520 DEBUG 7600 --- [http-nio-9090-exec-9] org.hibernate.SQL                        : insert into Employee (age, doj, gender, name, salary, id) values (?, ?, ?, ?, ?, ?)
+2021-04-09 13:07:17.634 DEBUG 7600 --- [http-nio-9090-exec-9] c.cognizant.service.EmployeeServiceImpl  : successfully saved :{}Employee(id=2001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03)
+2021-04-09 13:08:26.154  WARN 7600 --- [http-nio-9090-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported]
+2021-04-09 13:10:12.725  WARN 7600 --- [http-nio-9090-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (''' (code 39)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (''' (code 39)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (PushbackInputStream); line: 1, column: 2]]
+2021-04-09 13:10:21.689  WARN 7600 --- [http-nio-9090-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (''' (code 39)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character (''' (code 39)): expected a valid value (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (PushbackInputStream); line: 1, column: 2]]
+2021-04-09 13:12:55.413  INFO 7600 --- [http-nio-9090-exec-6] c.c.controller.EmployeeController        : started
+2021-04-09 13:12:55.414 DEBUG 7600 --- [http-nio-9090-exec-6] c.c.controller.EmployeeController        : Employee added: {}Employee(id=2000, name=mmm, gender=female, age=25, salary=80000.0, doj=2011-03-03)
+2021-04-09 13:12:55.414  INFO 7600 --- [http-nio-9090-exec-6] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 13:12:55.417 DEBUG 7600 --- [http-nio-9090-exec-6] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 13:12:55.425 DEBUG 7600 --- [http-nio-9090-exec-6] org.hibernate.SQL                        : select employee0_.id as id1_0_0_, employee0_.age as age2_0_0_, employee0_.doj as doj3_0_0_, employee0_.gender as gender4_0_0_, employee0_.name as name5_0_0_, employee0_.salary as salary6_0_0_ from Employee employee0_ where employee0_.id=?
+2021-04-09 13:12:55.430 DEBUG 7600 --- [http-nio-9090-exec-6] org.hibernate.SQL                        : insert into Employee (age, doj, gender, name, salary, id) values (?, ?, ?, ?, ?, ?)
+2021-04-09 13:12:55.605 DEBUG 7600 --- [http-nio-9090-exec-6] c.cognizant.service.EmployeeServiceImpl  : successfully saved :{}Employee(id=2000, name=mmm, gender=female, age=25, salary=80000.0, doj=2011-03-03)
+2021-04-09 13:13:33.055  INFO 7600 --- [http-nio-9090-exec-7] c.c.controller.EmployeeController        : started
+2021-04-09 13:13:33.055  INFO 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 13:13:33.061 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 13:13:33.069 DEBUG 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03), Employee(id=2000, name=mmm, gender=female, age=25, salary=80000.0, doj=2011-03-03), Employee(id=2001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)]
+2021-04-09 13:13:33.072 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 13:13:33.078 DEBUG 7600 --- [http-nio-9090-exec-7] c.c.controller.EmployeeController        : Employess are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03), Employee(id=2000, name=mmm, gender=female, age=25, salary=80000.0, doj=2011-03-03), Employee(id=2001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)]
+2021-04-09 13:13:33.079  INFO 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : started
+2021-04-09 13:13:33.081 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
+2021-04-09 13:13:33.084 DEBUG 7600 --- [http-nio-9090-exec-7] c.cognizant.service.EmployeeServiceImpl  : Employees are : {}[Employee(id=1001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=1002, name=Riya, gender=female, age=28, salary=18888.0, doj=2011-02-03), Employee(id=1003, name=Diya, gender=female, age=22, salary=10000.0, doj=2011-02-03), Employee(id=2000, name=mmm, gender=female, age=25, salary=80000.0, doj=2011-03-03), Employee(id=2001, name=Smith, gender=male, age=25, salary=12630.0, doj=2011-02-03), Employee(id=2002, name=anu, gender=female, age=22, salary=50000.0, doj=2012-01-01)]
+2021-04-09 13:13:33.086 DEBUG 7600 --- [http-nio-9090-exec-7] org.hibernate.SQL                        : select employee0_.id as id1_0_, employee0_.age as age2_0_, employee0_.doj as doj3_0_, employee0_.gender as gender4_0_, employee0_.name as name5_0_, employee0_.salary as salary6_0_ from Employee employee0_
